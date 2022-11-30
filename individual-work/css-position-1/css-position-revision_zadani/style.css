@@ -9,6 +9,7 @@ Barva text v oranžovém pozadí: #752400
 .container{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .header{
 height: 110px;
@@ -16,11 +17,12 @@ background-color: white;
 display: flex;
 position: sticky;
 top: 0;
-
+width: 100%;
 }
 .headline-1{
-  font-size: 80px;
+  font-size: 50px;
   text-align: center;
+  margin-top: 40px;
 
 }
 .hero-section{
@@ -29,21 +31,22 @@ width: 1200px;
 height: 400px;
 border-radius:0.75em;
 display: flex;
-margin-left: 250px;
-
+margin-top: 60px;
 }
 .hero-text{
   display: flex;
-  width: 500px;
+  
   justify-content: center;
   width: 60%;
   justify-content: center;
   align-items: center;
+  
 }
 .hero-text p{
-
-
+  color: #752400;
+  width: 600px;
 }
+
 
 .navbar{
   display: flex;
@@ -60,11 +63,16 @@ margin-left: 250px;
 }
 .text{
   display: flex;
-  width: 400px;
-  justify-content: center;
-  margin-left: 500px;
- 
-  
+  width: 100%;
+ justify-content: center;
+
+}
+.text-wrapper{
+  margin-top: 60px;
+}
+.text-wrapper p{
+display: flex;
+width: 600px;
 }
 .text p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -74,10 +82,12 @@ margin-left: 250px;
   justify-content: center;
   align-items: center;
   width: 40%;
+  
 }
 .hero-img img{
   height: 300px;
   width: 400px;
+  box-shadow: -15px -15px #e88121;
 }
 .header-logo img{
   height: 80px;
@@ -87,6 +97,21 @@ margin-left: 250px;
   width: 30%;
   align-items: center;
   justify-content: center;
-  margin-left: 200px;
   margin-top: 15px;
+  margin-left: 200px;
+}
+.top-link{
+  display: flex;
+  justify-content: right;
+  margin-bottom: 20px;
+  margin-right: 20px; 
+}
+.top-link img{
+  height: 40px;
+  width: 40px; 
+} 
+.top-link-wrapper{
+  width: 100%;
+  position: sticky;
+  bottom: 0;
 }
