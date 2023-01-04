@@ -6,20 +6,14 @@
   margin: 0;
 }
 
-.container {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-}
-
 .background {
   background-image: url("pictures/hero-image.png");
   background-size: cover;
-  height: 100vh;
+  height: 90%;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
+  position: relative;
 }
 
 .header {
@@ -27,7 +21,6 @@
   width: 100%;
   height: 100px;
   background-color: #cbc1b1;
-  position: absolute;
 }
 
 .navbar {
@@ -47,7 +40,7 @@
 
 .navbar ul li {
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .navbar ul li:hover {
@@ -75,14 +68,13 @@
 .text-box {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 250px;
   width: 650px;
   background-color: #7c7474;
   opacity: 0.3;
-  margin-left: 800px;
-  margin-top: 400px;
+  margin-left: 55%;
+  margin-top: 22.8%;
   text-align: center;
-  position: absolute;
 }
 
 .text-box h1 {
@@ -95,18 +87,10 @@
   margin-top: 21px;
 }
 
-.box-p {
-  display: flex;
-  width: 600px;
-  justify-content: center;
-}
-
 .text-box p {
   opacity: 1;
   margin-top: 20px;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 500;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 0.1em;
@@ -114,11 +98,6 @@
   color: #f8f7ec;
   text-align: start;
   margin-left: 50px;
-}
-
-.but_1 {
-  width: 100%;
-  justify-content: center;
 }
 
 .button_1 {
@@ -143,29 +122,29 @@
   color: white;
 }
 
-.title {
-  margin-top: 800px;
-  display: flex;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  position: absolute;
-  flex-direction: column;
-}
-
-.title h2 {
+.holliday h2 {
   color: black;
   font-family: "Lato", sans-serif;
   font-size: 36px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 2%;
+  display: block;
 }
 
 .holliday {
   display: flex;
-  margin-top: 900px;
-  justify-content: space-around;
+  margin-top: 45%;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
 }
 
 .pic-1 {
