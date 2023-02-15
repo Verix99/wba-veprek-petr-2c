@@ -29,12 +29,12 @@
 .main {
   display: flex;
   width: 100%;
-  height: 100vh;
+  flex-direction: column;
 }
 .background_main {
   background-image: url("pictures/hero-image.png");
   background-size: cover;
-  height: 90%;
+  height: 90vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -58,8 +58,7 @@
 .infobox {
   width: 650px;
   height: 350px;
-  background-color: #7c7474;
-  opacity: 0.3;
+  background-color:rgba(124, 116, 116, 0.3);
   margin-right: 30px;
   margin-bottom: 30px;
   display: flex;
@@ -82,4 +81,176 @@
   letter-spacing: 0.1em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #f8f7ec;
+  width: 590px;
+  margin-top: 20px;
+  display: flex;
+}
+.box_button{
+  background-color: rgba(124, 116, 116, 1);
+  color: #f8f7ec;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 2px solid #7c7474;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  opacity: 1;
+  width: 200px;
+  margin-top: 50px;
+}
+.h1_text{
+  color: black;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 36px;
+  text-transform: uppercase;
+letter-spacing: 0.1em;
+width: 100%;
+margin-top: 90px;
+}
+.holiday{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.flexbox_holiday{
+display: flex;
+justify-content: space-around;
+margin-top: 100px;
+}
+.pic-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pic-1 img {
+  width: 350px;
+  height: 350px;
+}
+
+.pic-1 h4 {
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pic-1 p {
+  margin-top: 20px;
+  width: 300px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.pic-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pic-2 img {
+  width: 350px;
+  height: 350px;
+}
+
+.pic-2 h4 {
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pic-2 p {
+  margin-top: 20px;
+  width: 300px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.pic-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pic-3 img {
+  width: 350px;
+  height: 350px;
+}
+
+.pic-3 h4 {
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pic-3 p {
+  margin-top: 20px;
+  width: 300px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+}
+.button_bot{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.footer {
+  margin-top: 100px;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: #cbc1b1;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.pic-1 h4{
+  display: flex;
+  justify-content: center;
+}
+.pic-2 h4{
+  display: flex;
+  justify-content: center;
+}
+.pic-3 h4{
+  display: flex;
+  justify-content: center;
+}
+.pic-1 p{
+  display: flex;
+  justify-content: center;
+  width: 350px;
+}
+.pic-2 p{
+  display: flex;
+  justify-content: center;
+  width: 350px;
+}
+.pic-3 p{
+  display: flex;
+  justify-content: center;
+  width: 350px;
 }
