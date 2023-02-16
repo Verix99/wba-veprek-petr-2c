@@ -38,6 +38,7 @@
   display: flex;
   gap: 1rem;
   margin-right: 165px;
+  align-items: center;
 }
 .nav-bar ul li a {
   text-decoration: none;
@@ -46,13 +47,23 @@
   font-size: 18px;
   font-family: "Lato", sans-serif;
 }
+.this {
+  padding: 10px;
+  background-color: rgba(124, 116, 116, 0.5);
+}
+.nav-bar ul li:hover {
+  background-color: rgba(124, 116, 116, 0.2);
+  color: white;
+  padding: 10px;
+}
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 130px);
-  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(3, 340px);
+  grid-template-rows: repeat(2, 130px);
   justify-content: center;
   align-items: center;
   row-gap: 50px;
+  column-gap: 20px;
 }
 
 .footer {
@@ -76,6 +87,51 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.grid1 p {
+  margin-left: 20px;
+}
+.grid2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.grid2 p {
+  margin-left: 20px;
+}
+.grid3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.grid3 p {
+  margin-left: 20px;
+}
+.grid4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.grid4 p {
+  margin-left: 20px;
 }

@@ -11,18 +11,11 @@
   flex-direction: column;
   background-color: #e5e5e5;
 }
-.outline {
-  display: flex;
-  width: 100%;
-  margin-top: 100px;
-  justify-content: center;
-}
 .header {
   display: flex;
   width: 100%;
   height: 100px;
   background-color: #cbc1b1;
-  position: absolute;
 }
 .navbar {
   display: flex;
@@ -36,19 +29,25 @@
   gap: 29px;
   justify-content: right;
   margin-right: 165px;
+  align-items: center;
 }
 .navbar ul li {
   font-family: "Lato", sans-serif;
   font-size: 18px;
 }
 .navbar ul li:hover {
-  background-color: #a58989d3;
+  background-color: rgba(124, 116, 116, 0.2);
   color: white;
+  padding: 10px;
 }
 .navbar ul li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+}
+.this {
+  padding: 10px;
+  background-color: rgba(124, 116, 116, 0.5);
 }
 .header-logo {
   margin-left: 163px;
@@ -59,9 +58,16 @@
   width: 100px;
   height: 100px;
 }
+.header-burger {
+  display: none;
+}
+.header-burger img {
+  width: 30px;
+  height: 30px;
+}
 .title {
   display: flex;
-  margin-top: 130px;
+  margin-top: 40px;
   color: black;
   justify-content: center;
   font-family: "Lato", sans-serif;
@@ -76,7 +82,7 @@
   row-gap: 20px;
   column-gap: 20px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
 }
 .button {
@@ -94,6 +100,7 @@
   cursor: pointer;
   opacity: 1;
   width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .button_bot {
   display: flex;
@@ -198,4 +205,77 @@
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    height: 80px;
+  }
+  .header-logo {
+    margin-left: 40px;
+    width: 20%;
+  }
+  .header-logo img {
+    width: 80px;
+    height: 80px;
+  }
+  .navbar {
+    display: none;
+  }
+  .header-burger {
+    display: flex;
+    width: 80%;
+    justify-content: right;
+    align-items: center;
+    margin-right: 22px;
+  }
+  .title {
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 60px;
+  }
+  .grid-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid-jmeno {
+    width: 310px;
+    height: 30px;
+  }
+  .grid-prijmeni {
+    width: 310px;
+    height: 30px;
+  }
+  .grid-telefon {
+    width: 310px;
+    height: 30px;
+  }
+  .grid-email {
+    width: 310px;
+    height: 30px;
+  }
+  .grid-zprava {
+    width: 310px;
+    height: 140px;
+  }
+  .button {
+    width: 120px;
+    height: 25px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+  .button_bot {
+    margin-top: 20px;
+  }
+  .end {
+    position: unset;
+  }
+  .container {
+    height: 90vh;
+  }
 }
