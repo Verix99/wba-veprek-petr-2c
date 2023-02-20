@@ -30,6 +30,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
+  background-color: #e5e5e5;
 }
 .background_main {
   background-image: url("pictures/hero-image.png");
@@ -65,6 +66,9 @@
   padding: 10px;
   background-color: rgba(124, 116, 116, 0.5);
 }
+.header-burger {
+  display: none;
+}
 .infobox {
   width: 650px;
   height: 350px;
@@ -94,8 +98,27 @@
   width: 590px;
   margin-top: 20px;
   display: flex;
+  letter-spacing: 0.1em;
 }
 .box_button {
+  background-color: rgba(124, 116, 116, 1);
+  color: #f8f7ec;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 2px solid #7c7474;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  opacity: 1;
+  width: 200px;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.box_button_1 {
   background-color: rgba(124, 116, 116, 1);
   color: #f8f7ec;
   font-family: "Lato", sans-serif;
@@ -155,10 +178,11 @@
 
 .pic-1 p {
   margin-top: 20px;
-  width: 300px;
+  width: 320px;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .pic-2 {
@@ -185,6 +209,7 @@
   font-family: "Lato", sans-serif;
   font-size: 18px;
   letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .pic-3 {
@@ -214,14 +239,15 @@
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.5);
 }
 .button_bot {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .footer {
-  margin-top: 100px;
   display: flex;
   height: 100px;
   width: 100%;
@@ -237,6 +263,11 @@
   line-height: 160%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pic-1 h4 {
   display: flex;
@@ -264,4 +295,163 @@
   display: flex;
   justify-content: center;
   width: 350px;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    height: 80px;
+  }
+  .logo {
+    margin-left: 40px;
+    width: 20%;
+  }
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .header-burger {
+    display: flex;
+    width: 80%;
+    justify-content: right;
+    align-items: center;
+    margin-right: 22px;
+  }
+  .infobox {
+    width: 330px;
+    height: 220px;
+    color: rgba(248, 247, 236, 1);
+    background-color: rgba(124, 116, 116, 0.8);
+  }
+  .background_main {
+    justify-content: center;
+    background-image: none;
+    height: 35vh;
+    margin-left: 14px;
+  }
+  .infobox h1 {
+    font-size: 20px;
+    text-shadow: none;
+  }
+  .infobox p {
+    font-size: 13px;
+    display: block;
+    width: 300px;
+    font-weight: 500;
+    text-shadow: none;
+  }
+  .box_button {
+    margin-top: 10px;
+    font-size: 11px;
+    padding: 5px;
+    width: 120px;
+    height: 25px;
+    background-color: RGB(161, 155, 152);
+    border: RGB(161, 155, 152);
+    font-weight: 600;
+    color: black;
+  }
+  .box_button_1 {
+    margin-top: 20px;
+    font-size: 11px;
+    padding: 5px;
+    width: 120px;
+    height: 25px;
+    background-color: RGB(161, 155, 152);
+    border: RGB(161, 155, 152);
+    font-weight: 600;
+    color: white;
+    margin-top: 5;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .h1_text {
+    margin-top: 20px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .pic-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+  }
+  .pic-1 h4 {
+    display: flex;
+    font-size: 12px;
+    height: 130px;
+    margin-top: 20px;
+    margin-left: 17px;
+    width: 180px;
+  }
+  .pic-1 p {
+    display: block;
+    width: 115px;
+    font-size: 10px;
+    margin-left: -165px;
+  }
+  .pic-1 img {
+    width: 117px;
+    height: 117px;
+  }
+  .pic-2 img {
+    width: 117px;
+    height: 117px;
+  }
+  .pic-3 img {
+    width: 117px;
+    height: 117px;
+  }
+  .flexbox_holiday {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .pic-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+  }
+  .pic-2 h4 {
+    display: flex;
+    font-size: 12px;
+    height: 130px;
+    margin-top: 20px;
+    margin-left: 17px;
+    width: 180px;
+  }
+  .pic-2 p {
+    display: block;
+    width: 115px;
+    font-size: 10px;
+    margin-left: -165px;
+  }
+  .pic-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+  }
+  .pic-3 h4 {
+    display: flex;
+    font-size: 12px;
+    height: 130px;
+    margin-top: 20px;
+    margin-left: 17px;
+    width: 180px;
+  }
+  .pic-3 p {
+    display: block;
+    width: 115px;
+    font-size: 10px;
+    margin-left: -165px;
+  }
+  .button_bot {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
 }
