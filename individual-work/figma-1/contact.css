@@ -4,12 +4,13 @@
   padding: 0;
   margin: 0;
 }
-.container {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  flex-direction: column;
+.main {
   background-color: #e5e5e5;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .header {
   display: flex;
@@ -189,20 +190,20 @@
   line-height: 24px;
   letter-spacing: 0.1em;
 }
-.end {
-  bottom: 0;
+.footer {
   display: flex;
   height: 100px;
   width: 100%;
   background-color: #cbc1b1;
-  position: absolute;
+
   justify-content: center;
   align-items: center;
 }
-.end p {
+
+.footer p {
   font-family: "Lato", sans-serif;
   font-size: 12px;
-
+  line-height: 160%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -276,10 +277,7 @@
   .button_bot {
     margin-top: 20px;
   }
-  .end {
-    position: unset;
-  }
-  .container {
-    height: 90vh;
+  .body {
+    overflow-x: hidden;
   }
 }
