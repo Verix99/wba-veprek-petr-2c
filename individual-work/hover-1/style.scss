@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 480px);
+    grid-template-rows: repeat(3, 250px);
+}
+
+.grid:hover {
+    opacity: 1;
+}
+
+.grid {
+    opacity: 0.5;
+    transition: all 0.4s;
+
+    img {
+        height: 250px;
+        width: 480px;
+    }
+}
